@@ -4,8 +4,8 @@
   "description": "Pagina para el control y manejo de tareas de equipos",
   "main": "index.js",
    "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.0.0"
+    "node": "12.x",
+    "npm": "6.x"
   },
   "scripts": {
     "start": "node index.js",
