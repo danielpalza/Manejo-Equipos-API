@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Pagina para el control y manejo de tareas de equipos",
   "main": "index.js",
+   "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
