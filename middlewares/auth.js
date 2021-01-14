@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 // Creamos el middleware
 const isValidHostname = (req, res, next) => {
   // array con los hostnames validos, de esta forma se puede permitir varios
-  const hostValid = [ 'localhost','manejo-equipos.herokuapp.com'];
+  const hostValid = [ 'localhost','manejo-equipos-api.herokuapp.com'];
 
   // Se comprueba que el hostname del solicitante es el correcto, su ip
   if (hostValid.includes(req.hostname)) {
