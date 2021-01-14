@@ -1,3 +1,3 @@
-# Manejo de equipos
+# Manejo-Equipos-API
+Manejo de datos enviados desde la pagina de Manejo-Equipos
 
-Pagina para el control y manejo de tareas de equipos.
