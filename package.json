@@ -1,5 +1,5 @@
 {
-  "name": "ManejoEquipos",
+  "name": "manejoequiposapi",
   "version": "0.0.1",
   "description": "Pagina para el control y manejo de tareas de equipos",
   "main": "index.js",
@@ -44,9 +44,15 @@
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "svg-inline-loader": "^0.8.2",
-    "svg-url-loader": "^6.0.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielpalza/Manejo-Equipos-API.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielpalza/Manejo-Equipos-API/issues"
+  },
+  "homepage": "https://github.com/danielpalza/Manejo-Equipos-API#readme"
 }
