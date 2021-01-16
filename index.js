@@ -4,10 +4,17 @@ const routesV1 = require('./routes/v1');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const path = require("path")
+const cors = require('cors');
 
 // se usa process.env para acceder a la variable de entorno importada de env.
 dotenv.config();
 const app = express();
+let corsOptions = {
+    origin: 'http://localhost:5500',
+    optionsSuccessStatus: 200 // For legacy browser support
+}
+
+app.use(cors(corsOptions));
 
 // Db connection
 const { mongoose } = require('./database');
