@@ -10,7 +10,7 @@ const cors = require('cors');
 dotenv.config();
 const app = express();
 let corsOptions = {
-    origin: 'http://localhost:5500',
+    origin: ['http://localhost:5500','https://manejoequipos-91f8a.web.app/']
     optionsSuccessStatus: 200 // For legacy browser support
 }
 
