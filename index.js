@@ -9,8 +9,10 @@ const cors = require('cors');
 // se usa process.env para acceder a la variable de entorno importada de env.
 dotenv.config();
 const app = express();
+
+//Mejorar el cors para que admita 2 direcciones
 let corsOptions = {
-    origin: ['http://localhost:5500','https://manejoequipos-91f8a.web.app/']
+    origin: 'https://manejoequipos-91f8a.web.app/'
     optionsSuccessStatus: 200 // For legacy browser support
 }
 
