@@ -16,7 +16,7 @@ let corsOptions = {
     optionsSuccessStatus: 200 // For legacy browser support
 }
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 // Db connection
 const { mongoose } = require('./database');
