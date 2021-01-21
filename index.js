@@ -12,7 +12,7 @@ const app = express();
 
 //Mejorar el cors para que admita 2 direcciones
 let corsOptions = {
-    origin: 'https://manejoequipos-91f8a.web.app/'
+    origin: 'https://manejo-equipos.vercel.app/'
     optionsSuccessStatus: 200 // For legacy browser support
 }
 
