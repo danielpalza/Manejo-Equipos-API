@@ -19,7 +19,7 @@ function manageOrigin(){
     else{false}
 }*/
 let corsOptions = {
-    "origin": 'http://localhost:5500/',
+    "origin": 'https://manejo-equipos.vercel.app',
     "preflightContinue": true,
     "optionsSuccessStatus": 200 // For legacy browser support
 }
