@@ -11,13 +11,26 @@ dotenv.config();
 const app = express();
 
 //Mejorar el cors para que admita 2 direcciones
+let whitelist = ['https://manejo-equipos.vercel.app', 'http://localhost:5500']
+/*let corsOptions = {
+    "origin": function (origin, callback) {
+        if (whitelist.indexOf(origin) !== -1) {
+          callback(null, true)
+        } else {
+          callback(new Error('Not allowed by CORS'))
+        }
+  },
+    "preflightContinue": true,
+    "optionsSuccessStatus": 200 // For legacy browser support
+}*/
+
 let corsOptions = {
-    "origin": 'https://manejo-equipos.vercel.app',
+    "origin":'https://manejo-equipos.vercel.app',
     "preflightContinue": true,
     "optionsSuccessStatus": 200 // For legacy browser support
 }
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 // Db connection
 const { mongoose } = require('./database');
