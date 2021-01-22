@@ -12,7 +12,7 @@ const app = express();
 
 //Mejorar el cors para que admita 2 direcciones
 let whitelist = ['https://manejo-equipos.vercel.app', 'http://localhost:5500']
-/*let corsOptions = {
+let corsOptions = {
     "origin": function (origin, callback) {
         if (whitelist.indexOf(origin) !== -1) {
           callback(null, true)
@@ -22,13 +22,8 @@ let whitelist = ['https://manejo-equipos.vercel.app', 'http://localhost:5500']
   },
     "preflightContinue": true,
     "optionsSuccessStatus": 200 // For legacy browser support
-}*/
-
-let corsOptions = {
-    "origin":'https://manejo-equipos.vercel.app',
-    "preflightContinue": true,
-    "optionsSuccessStatus": 200 // For legacy browser support
 }
+
 
 app.use(cors(corsOptions));
 
