@@ -11,15 +11,15 @@ dotenv.config();
 const app = express();
 
 //Mejorar el cors para que admita 2 direcciones
-let whitelist = ['https://manejo-equipos.vercel.app', 'http://localhost:5500']
+/*let whitelist = ['https://manejo-equipos.vercel.app', 'http://localhost:5500']
 function manageOrigin(){
     if(whitelist.indexOf(req.header('Origin')) !== -1){
         return true;
     }
     else{false}
-}
+}*/
 let corsOptions = {
-    "origin": manageOrigin(),
+    "origin": 'https://manejo-equipos.vercel.app',
     "preflightContinue": true,
     "optionsSuccessStatus": 200 // For legacy browser support
 }
