@@ -19,7 +19,7 @@ function manageOrigin(){
     else{false}
 }*/
 let corsOptions = {
-    "origin": 'https://manejo-equipos.vercel.app',
+    "origin": *,
     "preflightContinue": true,
     "optionsSuccessStatus": 200 // For legacy browser support
 }
