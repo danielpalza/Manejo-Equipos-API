@@ -13,7 +13,7 @@ routes.post("/deleteUser", isValidHostname, isAuth, usersController.deleteUser);
 routes.get("/getUsers", isValidHostname, isAuth, usersController.getUser);
 routes.post("/updateUser", isValidHostname, isAuth, usersController.updateUser);
 routes.post("/login", isValidHostname, usersController.login);
-routes.get("/authToken", isValidHostname, isAuth, usersController.authToken);
+routes.get("/authToken", isValidHostname, usersController.authToken);
 
 /* Exportamos nuestro router */
 
